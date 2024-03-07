@@ -1,0 +1,148 @@
+:root{ 
+    --background-color:  #edf2f5;
+    --white-color:  #ffffff;
+    --gray-color: #6f6f6f;
+    --dark-green-color: #00b800;
+    --black-color: #000000;
+    --blue-color: #0080ff;
+    --light-blue-color: #5aadff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 10px;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+
+.detail-page {
+    background-color: var(--white-color);
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.information-page{
+    background-color: var(--white-color);
+    border-radius: 40px;
+    position: fixed;
+    width: 300px;
+    padding: 40px;
+    height: 85%;
+}
+
+.avatar-panel{
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-icon{
+    width: 300px;
+    border-radius: 50%;
+}
+
+.information-title{
+    text-align: center;
+    font-size: 32px;
+}
+
+.information-link{
+    display: flex;
+    justify-content: center;
+}
+
+.information-resume, .information-github, .information-facebook{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition-duration: 0.3s;
+}
+
+.information-resume:hover, .information-github:hover, .information-facebook:hover{
+    color: #6f6f6f;
+    transition-duration: 0.3s;
+}
+
+.information-resume{
+    color: var(--dark-green-color);
+}
+
+.information-github{
+    color: var(--black-color);
+}
+
+.information-facebook{
+    color: var(--blue-color);
+}
+
+.information-contact{
+    margin-left: 30px;
+    font-style: italic;
+    color: var(--gray-color);
+}
+
+.information-aboutme{
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.detail-title{
+    background-color: var(--light-blue-color);
+    padding: 1px 10px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 26px;
+    color:var(--white-color);
+}
+
+.detail-project{
+    margin-left: 30px;
+    text-align: justify;
+    text-indent: 2em;
+    color: var(--gray-color);
+}
+
+.detail-part{
+    margin-left: 10px;
+    color: var(--blue-color);
+}
+
+.detail-list{
+    margin-left:20px;
+    color: var(--gray-color)
+}
+
+.detail-sub-content{
+    margin: 20px;
+    font-size: 12px;
+    font-style: italic; 
+}
+
+.detail-image{
+    border-radius: 50px;
+}
+
+.detail-skill{
+    color: var(--gray-color);
+    margin-left: 30px;
+    text-align: justify;
+}
+
+@media (max-width: 900px) {
+    body {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+
+    .information-page{
+        background-color: var(--white-color);
+        border-radius: 40px;
+        position: relative;
+        margin-bottom: 20px ;
+        width: auto;
+        padding: 40px;
+        height: max-content;
+    }
+}
